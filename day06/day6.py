@@ -10,7 +10,6 @@ for pair in pairs:
   orbits[pair[0]].append(pair[1])
   parents[pair[1]] = pair[0]
 
-
 def num_orbits(root, depth):
   total = depth
   for child in orbits[root]:
@@ -18,7 +17,6 @@ def num_orbits(root, depth):
   return total
 
 print("Part 1:", num_orbits("COM", 0))
-
 
 def shortest_path(start, end):
   global parents
