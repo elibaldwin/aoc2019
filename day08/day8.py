@@ -31,4 +31,5 @@ for i in range(99, -1, -1):
 print("Part 2:")
 for line in image:
   print(''.join(line))
+  
 
