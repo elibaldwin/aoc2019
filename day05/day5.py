@@ -1,4 +1,4 @@
-with open("day05/input.txt") as f:
+with open("input.txt") as f:
   code = tuple([int(x) for x in f.read().strip().split(',')])
 
 sysID = 1

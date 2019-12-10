@@ -1,4 +1,4 @@
-with open("day02/input.txt") as f:
+with open("input.txt") as f:
   code = tuple([int(x) for x in f.read().strip().split(",")])
 
 def run_code(code, noun, verb):

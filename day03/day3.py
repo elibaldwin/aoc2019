@@ -1,5 +1,5 @@
 
-with open("day03/input.txt") as f:
+with open("input.txt") as f:
   wires = f.readlines()
 
 wire1 = wires[0].split(',')

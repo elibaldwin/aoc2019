@@ -1,6 +1,6 @@
 from intcode import IntComputer
 
-with open("day09/input.txt") as f:
+with open("input.txt") as f:
   s = f.read()
   c = IntComputer(s, [1])
   c.run()

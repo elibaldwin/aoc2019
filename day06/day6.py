@@ -1,4 +1,4 @@
-with open("day06/input.txt") as f:
+with open("input.txt") as f:
   pairs = [x.strip().split(')') for x in f.readlines()]
 
 from collections import defaultdict

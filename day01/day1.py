@@ -7,7 +7,7 @@ def fuel_for(weight):
     weight = fuel
   return total
 
-with open("day01/input.txt") as f:
+with open("input.txt") as f:
   weights = [int(x) for x in f.readlines()]
   
   part1 = sum([((x // 3) - 2) for x in weights])
