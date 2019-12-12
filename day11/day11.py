@@ -5,7 +5,7 @@ dirs = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
 def run_turtle(code, start_color):
   global dirs
-  turtle = IntComputer(code, [start_color])
+  turtle = IntComputer(code, [start_color], 2)
   painted = defaultdict(int)
   x, y = 0, 0
   d = 0

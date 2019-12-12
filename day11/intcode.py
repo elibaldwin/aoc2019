@@ -50,11 +50,13 @@ class IntComputer:
     self.rbase += self.code[args[0]]
     self.pos += 2
 
-  def __init__(self, codestring, inbuf):
+  def __init__(self, codestring, inbuf, outbuflen=1):
     # input buffer
     self.inbuf = inbuf
     # output buffer
     self.output = []
+    # number of outputs to store before returning
+    self.outbuflen = outbuflen
     # defaultdict(int) stores instructions and allows for "boundless" memory
     self.code = defaultdict(int)
     # initialize with the values from the input codestring (comma-delimited)
@@ -86,7 +88,7 @@ class IntComputer:
       
       if opcode == 4:
         self.ops[3](args)
-        if (len(self.output)) == 2:
+        if (len(self.output)) == self.outbuflen:
           return
       elif 1 <= opcode <= 9:
         self.ops[opcode-1](args)
